@@ -1,0 +1,19 @@
+#include<iostream>
+ using namespace std;
+ int main( int argc, char**argv)
+ {
+     int e1s=0;
+     int e1e=10;
+     int e2s=5;
+     int e2e=15;
+      
+    if (e1e<e2s || e2e<e1s)
+    cout<<"No overlap"<<endl;
+    else
+    {
+        if((e2s>e1s && e2e<e1e ) || (e1s>e2s && e1e<e2e))
+        cout<<"Full overlap"<< endl;
+        else
+        cout <<"Partial overlap"<<endl;
+     }
+ }
